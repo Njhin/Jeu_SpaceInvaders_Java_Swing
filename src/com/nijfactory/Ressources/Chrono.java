@@ -1,4 +1,4 @@
-package com.nijfactory.Ressources;
+package com.nijfactory.ressources;
 
 import com.nijfactory.Scene;
 import com.nijfactory.SpaceInvaders;

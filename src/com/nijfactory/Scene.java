@@ -6,17 +6,19 @@ import java.awt.Graphics2D;
 
 import javax.swing.JPanel;
 
-import com.nijfactory.Ressources.Constantes;
+import com.nijfactory.ressources.Constantes;
+import com.nijfactory.ressources.entites.Vaisseau;
 
 public class Scene extends JPanel {
 	
 	/* Variables */
+	public Vaisseau vaisseau = new Vaisseau();
 	
 	/* Constructeur */
 	public Scene() {
-		super();
-		
+		super();	
 	}
+	
 	/* Methodes */
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
@@ -29,5 +31,11 @@ public class Scene extends JPanel {
 		// Dessin ligne verte en bas de l'ecran
 		g2.setColor(Color.green);
 		g2.fillRect(30, 530, 535, 5);
+		
+		// Dessin du vaisseau
+		g2.drawImage(this.vaisseau.getImg(), 
+					 this.vaisseau.getxPos(), 
+					 this.vaisseau.getyPos(), 
+					 null);
 	}
 }

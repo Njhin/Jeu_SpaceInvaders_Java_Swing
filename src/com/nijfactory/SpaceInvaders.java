@@ -1,7 +1,7 @@
 package com.nijfactory;
 
 import javax.swing.JFrame;
-import com.nijfactory.Ressources.Constantes;
+import com.nijfactory.ressources.Constantes;
 
 public class SpaceInvaders {
 /* Variables */
