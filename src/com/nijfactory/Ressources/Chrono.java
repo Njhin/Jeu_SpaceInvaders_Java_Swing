@@ -13,12 +13,13 @@ public class Chrono implements Runnable {
 	
 	@Override
 	public void run() {
-		SpaceInvaders.scene.repaint();
-		try {
-			Thread.sleep(PAUSE);
-		}
-		catch (InterruptedException e) {
-			
+		while(true){
+			SpaceInvaders.scene.repaint();
+			try {
+				Thread.sleep(PAUSE);
+			}
+			catch (InterruptedException e) {
+			}			
 		}
 	}
 }

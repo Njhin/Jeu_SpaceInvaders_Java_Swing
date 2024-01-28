@@ -4,31 +4,32 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 
 public abstract class Entite {
+
+/**** VARIABLES ****/	
 	
-	/**** Variables ****/
-	
-	protected int longueur, largeur, xPos, yPos, dx, dy;
+	protected int largeur, longueur, xPos, yPos, dx, dy;
 	protected boolean vivant;
 	protected String strImg1, strImg2, strImg3;
 	protected ImageIcon ico;
 	protected Image img;
+		
 	
-	/**** Constructeur ****/
+/**** CONSTRUCTEUR ****/
 	
 	// pas de constructeur
 	
-	/**** Methodes ****/
-	public int getLongueur() {
-		return longueur;
-	}
-	public void setLongueur(int longueur) {
-		this.longueur = longueur;
-	}
-	public int getLargeur() {
-		return largeur;
-	}
+	
+/**** METHODES ****/
+	public int getLargeur() {return largeur;}
+	
 	public void setLargeur(int largeur) {
 		this.largeur = largeur;
+	}
+	public int getlongueur() {
+		return longueur;
+	}
+	public void setlongueur(int longueur) {
+		this.longueur = longueur;
 	}
 	public int getxPos() {
 		return xPos;
@@ -89,5 +90,5 @@ public abstract class Entite {
 	}
 	public void setImg(Image img) {
 		this.img = img;
-	}	
+	}
 }

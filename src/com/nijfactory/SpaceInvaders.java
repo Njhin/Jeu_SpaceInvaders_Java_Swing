@@ -4,21 +4,24 @@ import javax.swing.JFrame;
 import com.nijfactory.ressources.Constantes;
 
 public class SpaceInvaders {
-/* Variables */
+	
+/**** VARIABLES ****/
+	
 	public static Scene scene;
 	
-/* Methodes */
+	
+/**** METHODES ****/
 	public static void main(String[] args) {
-		// Creation de la fenetre de l'applicatoin
-		JFrame fenetre = new JFrame("Space Invaders");
+		// Création de la fenêtre de l'application
+		JFrame fenetre = new JFrame("Jeu style Space Invaders");
 		fenetre.setSize(Constantes.LONGUEUR_FENETRE, Constantes.LARGEUR_FENETRE);
 		fenetre.setResizable(false);
 		fenetre.setLocationRelativeTo(null);
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		fenetre.setAlwaysOnTop(true);
-		
-		// Association du panneau Scene à la fenetre
-		scene = new Scene();
+		fenetre.setAlwaysOnTop(true);	
+
+		// Association du panneau Scene à la fenêtre
+		scene = new Scene();		
 		fenetre.setContentPane(scene);
 		
 		fenetre.setVisible(true);
