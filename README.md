@@ -1,1 +1,2 @@
-# Game SpaceInvaders Java Swing\n In progress
+# Game SpaceInvaders Java Swing
+In progress
