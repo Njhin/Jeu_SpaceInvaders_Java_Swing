@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import com.nijfactory.ressources.Chrono;
 import com.nijfactory.ressources.Clavier;
 import com.nijfactory.ressources.Constantes;
+import com.nijfactory.ressources.entites.GroupeAliens;
 import com.nijfactory.ressources.entites.Vaisseau;
 
 public class Scene extends JPanel {
@@ -16,6 +17,7 @@ public class Scene extends JPanel {
 /**** VARIABLES ****/	
 	
 	public Vaisseau vaisseau = new Vaisseau();
+	public GroupeAliens groupeALiens = new GroupeAliens();
 	
 /**** CONSTRUCTEUR ****/
 	
@@ -49,7 +51,8 @@ public class Scene extends JPanel {
 		
 		// Dessin du vaisseau
 		g2.drawImage(this.vaisseau.getImg(), this.vaisseau.deplacementVaisseau(), this.vaisseau.getyPos(), null);
-	}
-	
-	
+		
+		// Dessin des aliens
+		this.groupeALiens.dessinAliens(g2);
+	}	
 }
